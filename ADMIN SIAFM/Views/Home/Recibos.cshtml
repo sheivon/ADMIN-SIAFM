@@ -1,0 +1,173 @@
+﻿@{
+    ViewBag.Title = "Recibos";
+    Layout = "~/Views/Shared/_caja.cshtml";
+} 
+<div class="card">
+    <div class="card-header py-1">
+        <div class="row">
+            <h4 class="col gap-4">Recibos</h4>
+            <div class="col gap-2">
+                <a class="btn btn-sm btn-outline-primary" onclick="print();"><i class="fa fa-print"></i>&nbsp;Imprimir</a>
+                <a class="btn btn-sm btn-outline-primary"><i class="fa fa-file-excel"></i> Excel</a>
+            </div>
+            <!-- "De" Date Picker -->
+            <div class="col-2 d-flex py-0">
+                <label for="d1" class="form-label col-form-label-sm">De:</label>
+                <input type="date" id="d1" class="form-control form-control-sm py-0" placeholder="De Fecha" />
+            </div>
+            <!-- "A" Date Picker -->
+            <div class="col-2 d-flex py-0">
+                <label for="d2" class="form-label col-form-label-sm">A:</label>
+                <input type="date" id="d2" class="form-control form-control-sm py-0" placeholder="De Fecha" />
+            </div>
+            <div class="col px-0 mx-0 justify-content-end">
+                <label for="year">del Base :</label>
+                <select class="form-select-sm border-0" id="year">  
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022/2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive table-responsive-sm">
+            <table id="tblrec" class="table table-sm table-hover" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        @*<th>Periodo</th>*@
+                        <th>Recibo</th>
+                        <th>fecha</th>
+                        <th>Cobrador</th>
+                        <th>Monto</th>
+                        <th>Concepto</th>
+                        <th>Codigo</th>
+                        <th>Descripcion del Codigo</th>
+                        @*<th width="5%">Opciones</th>*@
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div> 
+</div>
+
+@section scripts{
+    <script>
+       let tblrec = $("#tblrec").dataTable({ });
+
+
+        $("#year").on("change", function () {
+            // Get the values of d1 and d2 from the input fields
+            var f1 = $("#d1").val(); // Assuming these are in a valid format for your controller
+            var f2 = $("#d2").val();
+            var yr = $("#year").val();
+            // Check if the DataTable exists, then destroy it
+            if ($.fn.dataTable.isDataTable("#tblrec")) {
+                var tblrec = $('#tblrec').DataTable(); // Reinitialize the DataTable
+                tblrec.clear().destroy(); // Clear data and destroy the table
+            }
+            if (f1 != null || f1 != undefined || f2 != null || f2 != undefined || f1 == ' ' || f2 == ' ') {
+                // Format the dates as 'YYYY-MM-DD' (or another required format)
+                f1 = new Date(f1).toISOString().split('T')[0]; // Converts to 'YYYY-MM-DD'
+                f2 = new Date(f2).toISOString().split('T')[0]; // Converts to 'YYYY-MM-DD
+                // Recreate the DataTable
+                tblrec = $("#tblrec").DataTable({
+                    "ajax": {
+                        "url": "@Url.Action("GetIngresoXf", "Home")",  // Correct action URL
+                        "type": "GET",  // Use GET as your controller expects query parameters
+                        "datatype": "json",  // Expect JSON data from the server
+                        "data": function (d) {
+                            // Append the parameters f1 and f2 to the URL as query parameters
+                            return {
+                                d1: f1,  // Sending f1 and f2 as query parameters
+                                d2: f2,
+                                year: yr
+                            };
+                        },
+                        "contentType": "application/json"  // Content type can be left as is for GET requests
+                    },
+                    "columns": [
+                        /* { "data": "Periodo" },*/
+                        { "data": "no_doc" },
+                        {
+                            "data": "fecharecibido",
+                            "render": function (dta) {
+                                return parseDotNetDate2(dta);  // Ensure parseDate() is defined to format the date correctly
+                            }
+                        },
+                        { "data": "cobrador" },
+                        { "data": "monto", "render": function (data) { return "C$ " + data.toFixed(2) } },
+                        { "data": "concepto" },
+                        { "data": "cod_ing" },
+                        { "data": "DescripcionCodigo" }
+                    ]
+                });
+            }
+            else {
+                swal({ icon: "warning", title: "Fecha no definidas", text: "Revise el rango de la fecha!" });
+            }
+        });
+
+
+        function parseDotNetDate2(dotNetDateString) {
+            // Extract the milliseconds from the .NET date string
+            const milliseconds = parseInt(dotNetDateString.replace(/\/Date\((-?\d+)\)\//, '$1'));
+
+            // Create a JavaScript Date object
+            const date = new Date(milliseconds);
+
+            // Format the date to dd-MM-yyyy
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+            const year = date.getFullYear();
+
+            return `${day}-${month}-${year}`;
+        }
+
+        function parseDate(dateString) {
+            // Use a regular expression to extract the timestamp from the string
+            const match = /\/Date\((\d+)\)\//.exec(dateString);
+            if (match) {
+                // Convert timestamp to an integer
+                const timestamp = parseInt(match[1], 10);
+                // Create a Date object with the timestamp
+                return new Date(timestamp);
+            } else {
+                console.error("Invalid date format");
+                return null;
+            }
+        }
+
+        function print() {
+           // $.LoadingOverlay("show");
+            $.ajax({
+                url: '@Url.Action("PrintCargos", "Print")',
+                type: 'GET',
+                xhrFields: {
+                    responseType: 'blob'
+                },
+                success: function (data) {
+                    var blob = new Blob([data], { type: 'application/pdf' });
+                    var url = window.URL.createObjectURL(blob);
+                  /*  $('#reportContainer').html('<iframe src="' + url + '" width="100%" height="600px"></iframe>');*/
+                    var prt = window.open(url, '_blank');
+                    if (prt) {
+                        prt.onload = function () {
+                            prt.document.title = 'Imprimir';
+                        }
+                    }
+                    $.LoadingOverlay("Hide");
+                },
+                error: function () {
+                    $.LoadingOverlay("Hide");
+                    swal({title:'Failed to generate report.'});
+                }
+            });
+        }
+
+    </script> 
+    
+    }

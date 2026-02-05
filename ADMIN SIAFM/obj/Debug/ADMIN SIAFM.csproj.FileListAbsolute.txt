@@ -1,0 +1,319 @@
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ADMIN SIAFM.dll.config
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ADMIN SIAFM.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ADMIN SIAFM.pdb
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csc.exe
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csc.exe.config
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csc.rsp
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csi.exe
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csi.exe.config
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csi.rsp
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.AppContext.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Console.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.IO.Compression.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Net.Http.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Net.Sockets.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.ValueTuple.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\vbc.exe
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\vbc.exe.config
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\vbc.rsp
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\VBCSCompiler.exe
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Antlr3.Runtime.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Newtonsoft.Json.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Oracle.ManagedDataAccess.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Buffers.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Formats.Asn1.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Memory.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Numerics.Vectors.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Text.Encodings.Web.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Text.Json.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.ValueTuple.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Helpers.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Mvc.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Optimization.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Razor.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.Deployment.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.Razor.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\WebGrease.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Buffers.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Formats.Asn1.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Memory.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Numerics.Vectors.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Text.Encodings.Web.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Text.Json.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.ValueTuple.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Helpers.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Mvc.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Optimization.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Razor.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.Razor.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Newtonsoft.Json.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Antlr3.Runtime.pdb
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.Helpers.resources.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.Mvc.resources.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.Optimization.resources.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.Razor.resources.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.WebPages.resources.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\obj\Debug\ADMIN SIAFM.csproj.AssemblyReference.cache
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\obj\Debug\ADMIN SIAFM.csproj.CoreCompileInputs.cache
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\obj\Debug\ADMIN SI.FA2599EF.Up2Date
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\obj\Debug\ADMIN SIAFM.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\obj\Debug\ADMIN SIAFM.pdb
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportSource.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.Shared.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\SSGB.KH\Desktop\Alcaldia Municpal KukraHill\INNOVACION\DEV\ADMIN SIAFM\ADMIN SIAFM\bin\stdole.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\SqlServerTypes\x64\msvcr120.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\SqlServerTypes\x86\msvcr120.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ADMIN SIAFM.dll.config
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ADMIN SIAFM.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ADMIN SIAFM.pdb
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csc.exe
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csc.exe.config
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csc.rsp
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csi.exe
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csi.exe.config
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\csi.rsp
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.AppContext.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Collections.Immutable.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Console.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Globalization.Calendars.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.IO.Compression.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.IO.FileSystem.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Net.Http.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Net.Sockets.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Reflection.Metadata.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.ValueTuple.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Xml.XPath.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\vbc.exe
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\vbc.exe.config
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\vbc.rsp
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\VBCSCompiler.exe
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\roslyn\VBCSCompiler.exe.config
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Antlr3.Runtime.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\EPPlus.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\EPPlus.Interfaces.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\EPPlus.System.Drawing.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.ReportViewer.Common.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.ReportViewer.Design.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.ReportViewer.WebForms.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.SqlServer.Types.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.Web.Infrastructure.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Newtonsoft.Json.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Oracle.ManagedDataAccess.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Buffers.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.ComponentModel.Annotations.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Diagnostics.DiagnosticSource.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Drawing.Common.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Formats.Asn1.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Memory.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Numerics.Vectors.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Text.Encodings.Web.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Text.Json.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Threading.Tasks.Extensions.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.ValueTuple.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Helpers.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Mvc.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Optimization.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Razor.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.Deployment.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.Razor.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\WebGrease.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\EnvDTE.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.ReportViewer.WinForms.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\stdole.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.MSXML.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\EPPlus.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Buffers.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Diagnostics.DiagnosticSource.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Drawing.Common.pdb
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Drawing.Common.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Formats.Asn1.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Memory.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Numerics.Vectors.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Text.Encodings.Web.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Text.Json.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Threading.Tasks.Extensions.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.ValueTuple.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Helpers.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Mvc.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Optimization.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.Razor.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.Deployment.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\System.Web.WebPages.Razor.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Newtonsoft.Json.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Antlr3.Runtime.pdb
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.Helpers.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.Mvc.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.Optimization.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.Razor.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.WebPages.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\obj\Debug\ADMIN SIAFM.csproj.AssemblyReference.cache
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\obj\Debug\ADMIN SIAFM.csproj.CoreCompileInputs.cache
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\obj\Debug\ADMIN SI.FA2599EF.Up2Date
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\obj\Debug\ADMIN SIAFM.dll
+C:\00-IN-DEV\ADMIN SIAFM\ADMIN SIAFM\obj\Debug\ADMIN SIAFM.pdb

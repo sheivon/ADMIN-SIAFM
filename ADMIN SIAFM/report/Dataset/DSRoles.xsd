@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSRolesxsd" targetNamespace="http://tempuri.org/DSRolesxsd.xsd" xmlns:mstns="http://tempuri.org/DSRolesxsd.xsd" xmlns="http://tempuri.org/DSRolesxsd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSRolesxsd" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DSRolesxsd" msprop:Generator_DataSetName="DSRolesxsd">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DSRoles" msprop:Generator_RowEvHandlerName="DSRolesRowChangeEventHandler" msprop:Generator_RowDeletedName="DSRolesRowDeleted" msprop:Generator_RowDeletingName="DSRolesRowDeleting" msprop:Generator_RowEvArgName="DSRolesRowChangeEvent" msprop:Generator_TablePropName="DSRoles" msprop:Generator_RowChangedName="DSRolesRowChanged" msprop:Generator_RowChangingName="DSRolesRowChanging" msprop:Generator_TableClassName="DSRolesDataTable" msprop:Generator_RowClassName="DSRolesRow" msprop:Generator_TableVarName="tableDSRoles" msprop:Generator_UserTableName="DSRoles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Role" msprop:Generator_ColumnPropNameInRow="Role" msprop:Generator_ColumnPropNameInTable="RoleColumn" msprop:Generator_ColumnVarNameInTable="columnRole" msprop:Generator_UserColumnName="Role" type="xs:string" minOccurs="0" />
+              <xs:element name="Activo" msprop:Generator_ColumnPropNameInRow="Activo" msprop:Generator_ColumnPropNameInTable="ActivoColumn" msprop:Generator_ColumnVarNameInTable="columnActivo" msprop:Generator_UserColumnName="Activo" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

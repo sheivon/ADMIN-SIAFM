@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo de Caja</title>
+    @Styles.Render("~/Content/css")
+    <style>
+        /* Ensure the HTML and Body are full height */
+        html, body {
+            height: 96%;
+            margin: 0;
+        }
+        /* Use flexbox to make the body take up the full height */
+        .container.body-content {
+            min-height: 96%;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Push the footer to the bottom if the content is less than the page height */
+        footer {
+            margin-top: auto;
+        }
+    </style>
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+            @Html.ActionLink("Caja", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1"> 
+                    @*<li class="nav-item dropdown gap-4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Modulos
+                            </a>
+                            <ul class="dropdown-menu gap-2">
+                                <li><a class="dropdown-item" href="@Url.Action("Usuarios","Home")">CAJA</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Roles","Home")">BANCO</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Roles","Home")">CONTABILIDAD</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Roles","Home")">PRESUPUESTO</a></li>
+                            </ul>
+                        </li>*@ 
+                    <li>@Html.ActionLink("Recibos", "Recibos", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="gap-4 start-100 justify-content-end"><a class="nav-link" href="@Url.Action("index","Modulos")"><i class="fas fa-boxes"></i>&nbsp;Modulos</a></li>
+
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li>
+
+                    </li>
+                    <li class="gap-4 start-100 justify-content-end"><a class="nav-link" href="@Url.Action("index","Modulos")"><i class="fas fa-boxes"></i>&nbsp;Modulos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <footer>
+            <p>Gamboa Tech &copy; @DateTime.Now.Year - Admin SIAFM</p>
+        </footer>
+    </div>
+    <script>
+        function parseDate(dotNetDateString) {
+            // Extract the milliseconds from the .NET date string
+            const milliseconds = parseInt(dotNetDateString.replace(/\/Date\((-?\d+)\)\//, '$1'));
+
+            // Create a JavaScript Date object
+            const date = new Date(milliseconds);
+
+            // Format the date to dd-MM-yyyy
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+            const year = date.getFullYear();
+
+            return `${day}-${month}-${year}`;
+        }
+    </script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

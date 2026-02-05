@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "SolicitudPresupuestaria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<div class="body">
+    <div class="card-header">
+        <div class="row gap-2">
+            <h4 class="col-3 gap-1">Solicitudes Presupuestaria</h4> 
+            <div class="col d-inline-flex me-auto end-0"> 
+                <input class="col form-control mr-3" placeholder="Solicitud" />
+                <a class="btn btn-sm btn-outline-primary me-auto">Buscar</a>
+            </div>
+        </div> 
+    </div>
+    <div class="card-body m-3 p-3">
+        <div class="card border-success m-2 p-2">
+            <div class="rounded-3 shadow border-2 border-primary m-2 p-2" id="PresContainer">
+                <label>Solicitud: 00</label>
+                <br />
+                <label>Nomero Cuenta: 00</label>
+                <br />
+                <label>Concepto: 00</label>
+                <br />
+                <label>Monto: 00</label>
+                <br />
+                <label>Solicitado: 00</label>
+                <br />
+                <label>Aprobado: 00</label>
+                <br />
+                <label>Mes: 00</label>
+                <br />
+                <label>Año : 00</label>
+                <br />
+                <label>Fecha Acta : 00</label>
+                <br />
+                <label>Fecha : 00</label>
+                <br />
+                <label>Estado : 00</label>
+                <br />
+                <button class="btn btn-primary btn-lg" onclick="btnRevive()">Revivir</button>
+            </div>
+        </div>
+        
+    </div> 
+</div>
+
+@section scripts{
+
+    <script>
+
+        function btnRevive() {
+            swal({ icon: success });
+        }
+
+    </script>
+    
+    }

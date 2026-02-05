@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\00-IN-DEV\\ADMIN SIAFM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|c:\\00-in-dev\\admin siafm\\admin siafm\\views\\home\\usuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|solutionrelative:admin siafm\\views\\home\\usuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|c:\\00-in-dev\\admin siafm\\admin siafm\\views\\home\\revivirsfp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|solutionrelative:admin siafm\\views\\home\\revivirsfp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|c:\\00-in-dev\\admin siafm\\admin siafm\\views\\home\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|solutionrelative:admin siafm\\views\\home\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|c:\\00-in-dev\\admin siafm\\admin siafm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|solutionrelative:admin siafm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|C:\\00-IN-DEV\\ADMIN SIAFM\\admin siafm\\controllers\\dbcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|solutionrelative:admin siafm\\controllers\\dbcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|C:\\00-IN-DEV\\ADMIN SIAFM\\admin siafm\\views\\home\\recibos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|solutionrelative:admin siafm\\views\\home\\recibos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|C:\\00-IN-DEV\\ADMIN SIAFM\\admin siafm\\report\\dataset\\dsrecibos.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{0FE244D9-A4A8-4558-A39C-706C78327E83}|ADMIN SIAFM\\ADMIN SIAFM.csproj|solutionrelative:admin siafm\\report\\dataset\\dsrecibos.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DBControl.cs",
+              "DocumentMoniker": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Controllers\\DBControl.cs",
+              "RelativeDocumentMoniker": "ADMIN SIAFM\\Controllers\\DBControl.cs",
+              "ToolTip": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Controllers\\DBControl.cs",
+              "RelativeToolTip": "ADMIN SIAFM\\Controllers\\DBControl.cs",
+              "ViewState": "AgIAACYEAAAAAAAAAAAAACoEAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T15:22:54.819Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ADMIN SIAFM\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ADMIN SIAFM\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAYwI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T17:55:17.414Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Usuarios.cshtml",
+              "DocumentMoniker": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Views\\Home\\Usuarios.cshtml",
+              "RelativeDocumentMoniker": "ADMIN SIAFM\\Views\\Home\\Usuarios.cshtml",
+              "ToolTip": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Views\\Home\\Usuarios.cshtml",
+              "RelativeToolTip": "ADMIN SIAFM\\Views\\Home\\Usuarios.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T21:47:08.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RevivirSFP.cshtml",
+              "DocumentMoniker": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Views\\Home\\RevivirSFP.cshtml",
+              "RelativeDocumentMoniker": "ADMIN SIAFM\\Views\\Home\\RevivirSFP.cshtml",
+              "ToolTip": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Views\\Home\\RevivirSFP.cshtml",
+              "RelativeToolTip": "ADMIN SIAFM\\Views\\Home\\RevivirSFP.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T21:34:52.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Eliminar.cshtml",
+              "DocumentMoniker": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Views\\Home\\Eliminar.cshtml",
+              "RelativeDocumentMoniker": "ADMIN SIAFM\\Views\\Home\\Eliminar.cshtml",
+              "ToolTip": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Views\\Home\\Eliminar.cshtml",
+              "RelativeToolTip": "ADMIN SIAFM\\Views\\Home\\Eliminar.cshtml",
+              "ViewState": "AgIAAFABAAAAAAAAAAAAAFMBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-03T16:50:31.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DSRecibos.xsd",
+              "DocumentMoniker": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\report\\Dataset\\DSRecibos.xsd",
+              "RelativeDocumentMoniker": "ADMIN SIAFM\\report\\Dataset\\DSRecibos.xsd",
+              "ToolTip": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\report\\Dataset\\DSRecibos.xsd",
+              "RelativeToolTip": "ADMIN SIAFM\\report\\Dataset\\DSRecibos.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-07-01T21:21:58.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Recibos.cshtml",
+              "DocumentMoniker": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Views\\Home\\Recibos.cshtml",
+              "RelativeDocumentMoniker": "ADMIN SIAFM\\Views\\Home\\Recibos.cshtml",
+              "ToolTip": "C:\\00-IN-DEV\\ADMIN SIAFM\\ADMIN SIAFM\\Views\\Home\\Recibos.cshtml",
+              "RelativeToolTip": "ADMIN SIAFM\\Views\\Home\\Recibos.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T17:36:41.367Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

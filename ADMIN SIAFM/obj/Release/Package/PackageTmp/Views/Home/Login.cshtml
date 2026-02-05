@@ -1,0 +1,139 @@
+﻿@{
+    ViewBag.Title = "login";
+    Layout = "";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin SIAFM</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/fontawesome")
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .footer {
+            flex-shrink: 0; /* Prevent footer from growing */
+        }
+
+        #kofi-widget-container {
+            bottom: 20px !important; /* Adjust the value to move the widget further down */
+            right: 20px; /* Adjust as needed */
+            position: fixed !important;
+        }
+         
+        .floatingchat-container-wrap-mobi {
+            bottom: 50px !important; /* Adjust as necessary */
+        }
+    </style>
+</head>
+<body class="sb-nav-fixed">
+    <div class="wrapper">
+        <div class="content">
+            <!-- Your existing content here -->
+            <section class="vh-80">
+                <!-- Your existing content -->
+                <div class="container-fluid h-custom mt-4">
+                    <div class="row d-flex justify-content-center align-items-center h-90">
+                        <div class="col-md-9 col-lg-6 col-xl-5 mt-3">
+                            <img src="~/LOGO.png"
+                                 class="img-fluid min-vh-20 min-vw-20 mb-4" alt="logo" @*style="height:220px; width:220px;"*@>
+                        </div>
+                        <div class="col-md-8 col-lg-6 col-xl-4 border-2 border-success m-2 shadow-lg rounded-3 border">
+                            <div class="vh-10"></div>     
+                            <div class="mb-3 mt-3 align-content-center">
+                                <h1 class="text-center mb-0 py-0">Admin SIAFM</h1>
+                                <h6 class="text-end py-0 mt-0">by Gamboa</h6>
+                            </div>
+                            <form  class="justify-content-center align-content-center" action="@Url.Action("Login","Home")" method="post"> 
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="usuario" required>
+                                    <label for="username">Usuario:</label>
+                                </div>
+                                <div class="mt-2 px-0 mx-0 form-floating mb-3 ">
+                                    <input type="password" class="form-control " id="password" name="password" placeholder="Password" required>
+                                    <label for="password" class="form-label">Password:</label>
+                                </div>
+                                @{
+                                    if (ViewBag.Error != null)
+                                    {
+                                        <div class="form-floating mb-2 mt-2">
+                                            <div class="alert alert-danger">
+                                                @ViewBag.Error
+                                            </div>
+                                        </div>
+
+                                        ViewBag.Error = null;
+                                    }
+                                }
+
+                                <div class="mt-2 px-5 mx-5 align-content-start justify-content-start mb-3">
+                                    <button type="submit" class="btn btn-outline-success border-1 btn-lg"
+                                            style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                                        Login
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-1 px-1 px-xl-3 bg-success sticky-bottom">
+            <!-- Footer content -->
+            <!-- Copyright -->
+            <div class="text-white mb-md-0 me-6">
+                <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+                <script>
+                    kofiWidgetOverlay.draw('sheilongamboa', {
+                        'type': 'floating-chat',
+                        'floating-chat.donateButton.text': 'Support me',
+                        'floating-chat.donateButton.background-color': '#794bc4',
+                        'floating-chat.donateButton.text-color': '#fff'
+                    });
+                </script>
+            </div>
+            <!-- Copyright -->
+            <div class="text-white mb-md-0 me-6 text-sm-center align-self-center align-content-center">
+                Copyright &copy;
+                <br />
+                Ing.Sheilon Gamboa @DateTime.Now.Year
+            </div>
+            <div class="text-white mb-md-0 me-4"></div>
+            <div class="text-white mb-md-0 me-6"></div>
+            <div class="text-white mb-md-0 me-6"></div>
+            <!-- Right -->
+            <div class="align-self-center align-content-center">
+                <a href="https://www.facebook.com/AlcaldiadeKukraHill" class="text-white me-3" style="text-decoration:none;" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.alcaldiakukrahill.gob.ni" class="text-white me-3" style="text-decoration:none;" target="_blank">
+                    <img src="~/LOGO.png" style="width:30px" />Sitio Web
+                </a>
+                <a href="https://correo.alcaldiakukrahill.gob.ni" class="text-white me-3" style="text-decoration:none;" target="_blank">
+                    <i class="far fa-envelope-open"></i> Correo Institucional
+                </a>
+            </div>
+            <!-- Right -->
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/sb-admin")
+
+</body>
+</html>

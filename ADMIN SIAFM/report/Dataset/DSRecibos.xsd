@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSRecibos" targetNamespace="http://tempuri.org/DSRecibos.xsd" xmlns:mstns="http://tempuri.org/DSRecibos.xsd" xmlns="http://tempuri.org/DSRecibos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSRecibos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DSRecibos" msprop:Generator_DataSetName="DSRecibos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DSRecibos" msprop:Generator_RowEvHandlerName="DSRecibosRowChangeEventHandler" msprop:Generator_RowDeletedName="DSRecibosRowDeleted" msprop:Generator_RowDeletingName="DSRecibosRowDeleting" msprop:Generator_RowEvArgName="DSRecibosRowChangeEvent" msprop:Generator_TablePropName="_DSRecibos" msprop:Generator_RowChangedName="DSRecibosRowChanged" msprop:Generator_RowChangingName="DSRecibosRowChanging" msprop:Generator_TableClassName="DSRecibosDataTable" msprop:Generator_RowClassName="DSRecibosRow" msprop:Generator_TableVarName="tableDSRecibos" msprop:Generator_UserTableName="DSRecibos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Periodo" msprop:Generator_ColumnPropNameInRow="Periodo" msprop:Generator_ColumnPropNameInTable="PeriodoColumn" msprop:Generator_ColumnVarNameInTable="columnPeriodo" msprop:Generator_UserColumnName="Periodo" type="xs:string" minOccurs="0" />
+              <xs:element name="no_doc" msprop:Generator_ColumnPropNameInRow="no_doc" msprop:Generator_ColumnPropNameInTable="no_docColumn" msprop:Generator_ColumnVarNameInTable="columnno_doc" msprop:Generator_UserColumnName="no_doc" type="xs:string" minOccurs="0" />
+              <xs:element name="fecharecibo" msprop:Generator_ColumnPropNameInRow="fecharecibo" msprop:Generator_ColumnPropNameInTable="fechareciboColumn" msprop:Generator_ColumnVarNameInTable="columnfecharecibo" msprop:Generator_UserColumnName="fecharecibo" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="cobrador" msprop:Generator_ColumnPropNameInRow="cobrador" msprop:Generator_ColumnPropNameInTable="cobradorColumn" msprop:Generator_ColumnVarNameInTable="columncobrador" msprop:Generator_UserColumnName="cobrador" type="xs:string" minOccurs="0" />
+              <xs:element name="concepto" msprop:Generator_ColumnPropNameInRow="concepto" msprop:Generator_ColumnPropNameInTable="conceptoColumn" msprop:Generator_ColumnVarNameInTable="columnconcepto" msprop:Generator_UserColumnName="concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_ing" msprop:Generator_ColumnPropNameInRow="cod_ing" msprop:Generator_ColumnPropNameInTable="cod_ingColumn" msprop:Generator_ColumnVarNameInTable="columncod_ing" msprop:Generator_UserColumnName="cod_ing" type="xs:string" minOccurs="0" />
+              <xs:element name="DescriptionCodigo" msprop:Generator_ColumnPropNameInRow="DescriptionCodigo" msprop:Generator_ColumnPropNameInTable="DescriptionCodigoColumn" msprop:Generator_ColumnVarNameInTable="columnDescriptionCodigo" msprop:Generator_UserColumnName="DescriptionCodigo" type="xs:string" minOccurs="0" />
+              <xs:element name="monto" msprop:Generator_ColumnPropNameInRow="monto" msprop:Generator_ColumnPropNameInTable="montoColumn" msprop:Generator_ColumnVarNameInTable="columnmonto" msprop:Generator_UserColumnName="monto" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

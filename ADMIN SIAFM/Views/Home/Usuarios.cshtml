@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "Usuarios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+} 
+<div class="card">
+    <div class="card-header d-flex bg-primary">
+        <h5 class="font-weight-bold text-white col-sm-2">Usuarios</h5>
+        <div class="col-sm-8">
+            <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#artmdl" onclick="modalfrm(null)"><i class="fas fa-fw fa-plus"></i>Nuevo</button>
+            <button class="btn btn-sm btn-outline-light" onclick="printa();"><i class="fas fa-print "> </i>Imprimir</button>
+            <button class="btn btn-sm btn-outline-light" onclick="printexcel();"><i class="fas fa-fw fa-file-excel"></i><span>Excel</span></button>
+        </div>
+        <div class="col-2 ">
+            <label for="year" class="text-white">Base del año:</label>
+            <select class="form-select-sm form-control-sm border-0" id="year">
+                <option value="2022">2022/2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-sm table-responsive" id="tblusr">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombres y Apellidos</th>
+                    <th>Fecha Registro</th>
+                    <th>Fecha Baja</th>
+                    @*<th>ID Rol</th>*@
+                    <th>Name</th>
+                    <th>Identificación</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Cargo</th>
+                    <th>Activo</th>
+                    <th hidden> </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <th>#</th>
+                    <th>Nombres y Apellidos</th>
+                    <th>Fecha Registro</th>
+                    <th>Fecha Baja</th>
+                    @*<th>ID Rol</th>*@
+                    <th>Name</th>
+                    <th>Identificación</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Cargo</th>
+                    <th>Activo</th>
+                    <th hidden> </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+
+@section scripts{
+    <script>
+
+        let tableusr = $("#tblusr").DataTable({});
+  
+        $("#year").on("change", function () {
+            var yr = $("#year").val();
+         
+            // Destroy the existing DataTable to remove old data
+            if ($.fn.DataTable.isDataTable('#tblusr')) {
+                $('#tblusr').DataTable().clear().destroy();
+            }
+            // Reinitialize the DataTable with the new AJAX request
+            tableusr = $("#tblusr").dataTable({
+                "ajax": {
+                    "url": "@Url.Action("GetUsuarios", "Home")",
+                    "type": "GET",
+                    "datatype": "json",
+                    "data": { "year": yr }
+                },
+                "columns": [
+                    { "data": "IdUsuario" },
+                    { "data": "Nombre" },
+                    { "data": "FechaRg", "render": function (data) { return formatDate(data); } },
+                    { "data": "FechaBj", "render": function (data) { return data ? new formatDate(data) : "N/A"; } },
+                  /*  { "data": "IdRol" },*/
+                    { "data": "Name" },
+                    { "data": "Identificacion" },
+                    { "data": "Telefono" },
+                    { "data": "Correo" },
+                    { "data": "Cargo" },
+                    { "data": "Activo", "render": function (data) { return data == 'A'? '<span class="badge bg-success">SI</span>': '<span class="badge bg-danger">NO</span>' } },
+                    {
+                        data: null,
+                        className: "center",
+                        defaultContent: `
+                                      <div class="d-flex justify-content-center gap-2 py-0">
+                                        <a href="#" class="btn btn-sm btn-primary editor_edit  py-0">
+                                          <i class="fas fa-fw fa-pen"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm btn-danger editor_remove  py-0">
+                                          <i class="fas fa-fw fa-trash"></i>
+                                        </a>
+                                      </div>`,
+                        searchable: false,
+                        ordering: false,
+                        width: "100px"
+                    }
+                ]
+            });
+        });
+
+
+
+
+        function formatDate(data) {
+            if (!data) return '';
+            const match = /\/Date\((\d+)\)\//.exec(data);
+            if (match) {
+                const date = new Date(parseInt(match[1]));
+                return date.toLocaleDateString(); // Only returns date part
+            }
+            return 'Invalid Date'; 
+        }
+    </script>
+    
+    
+    
+    
+    }

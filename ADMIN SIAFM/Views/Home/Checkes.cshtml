@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Checkes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<div class="card">
+    <div class="card-header py-1">
+        <div class="row py-0">
+            <h4 class="gap-2 col">Cheques</h4> 
+            <div class="col position-relative">
+                <label for="year">del Base:</label>
+                <select class="form-select-sm border-0" id="year">
+                    <option value="2022">2022/2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+            </div>
+        </div>
+        
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-sm table-hover" id="tblce" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Cheque</th> 
+                        <th>Benficiario</th>
+                        <th>Cuenta Bancaria</th>
+                        <th>Monto</th>
+                        <th>Secuencia</th>
+                        @*<th>Fecha</th>*@
+                        <th width="5%">opciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table> 
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+        let tblce = $("#tblce").DataTable({});
+
+        $("#year").on("change", function () {
+            // Get the values of d1 and d2 from the input fields 
+            var yr = $("#year").val(); 
+
+            // Check if the DataTable exists, then destroy it
+            if ($.fn.dataTable.isDataTable("#tblce")) {
+                var tblrec = $('#tblce').DataTable(); // Reinitialize the DataTable
+                tblrec.clear().destroy(); // Clear data and destroy the table
+            }
+            tblce = $("#tblce").DataTable({
+            // Recreate the DataTable
+            "ajax": {
+                    "url": "@Url.Action("CKce", "Home")",
+                    "type": "GET",
+                    "datatype": "json"
+                    , "data": {"year":yr}
+                },
+                "columns": [
+                    { "data": "cheque" },
+                    { "data": "Benficiario" },
+                    { "data": "Cuenta" },
+                    { "data": "monto" },
+                    { "data": "id" }
+                    ,
+                    {
+                        "data": "Fecha", render: function (data) {
+                            return parseDate(data);
+                        }
+                    },
+                ]
+            });
+        });
+        function GetCheck() {
+            var ck = $("#txtck").val();
+        }
+
+        function parseDate(dateString) {
+            // Use a regular expression to extract the timestamp from the string
+            const match = /\/Date\((\d+)\)\//.exec(dateString);
+            if (match) {
+                // Convert timestamp to an integer
+                const timestamp = parseInt(match[1], 10);
+                // Create a Date object with the timestamp
+                return new Date(timestamp);
+            } else {
+                console.error("Invalid date format");
+                return null;
+            }
+        }
+    </script>
+    }

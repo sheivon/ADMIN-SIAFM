@@ -1,0 +1,220 @@
+
+
+SIAFM 2024
+
+MS
+MS
+
+		
+		
+		
+		MS_USUARIO
+			ID_USUARIO	INTEGER	 NOT NULL,
+			NOMBRE		VARCHAR2(255) NULL,
+			PASS		VARCHAR2(255) NOT NULL,
+			ACTIVO		VARCHAR2(1) NOT NULL COMMENT "A=ACTIV0, I=INACTIVO",
+			FECHA_RG	DATE NOT NULL,
+			FECHA_BJ	DATE NULL,
+			ID_ROL		INTEGER,
+			NAME 		VARCHAR2(25) NOT NULL,
+			IDENTIFICACION VARCHAR2(25) NULL,
+			TELEFONO 	VARCHAR2(20) NULL,
+			CORREO 		VARCHAR2(255) NULL,
+			CARGO		VARCHAR2(255) NULL
+			
+-- Create table
+create table MS_USUARIO
+(
+  ID_USUARIO     INTEGER not null,
+  NOMBRE         VARCHAR2(255),
+  PASS           VARCHAR2(255) not null,
+  ACTIVO         VARCHAR2(1) not null,
+  FECHA_RG       DATE not null,
+  FECHA_BJ       DATE,
+  ID_ROL         INTEGER not null,
+  NAME           VARCHAR2(25) not null,
+  IDENTIFICACION VARCHAR2(25),
+  TELEFONO       VARCHAR2(20),
+  CORREO         VARCHAR2(255),
+  CARGO          VARCHAR2(255)
+)
+tablespace MS_STD
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the columns 
+comment on column MS_USUARIO.ACTIVO
+  is 'A = ACTIVO, I = INACTIVO  ';
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table MS_USUARIO
+  add constraint PK_MS_USUARIO_ID primary key (ID_USUARIO)
+  using index 
+  tablespace MS_STD
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate indexes 
+create unique index IX_MS_USUARIO_NOMBRE on MS_USUARIO (NAME)
+  tablespace MS_STD
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );			
+			
+			
+		
+			MS_ROL_ACCESO 
+					ID_ROL_ACCESO INTEGER not null,
+				  ID_ROL        INTEGER not null,
+				  ID_ACCESO     INTEGER not null,
+				  VER           VARCHAR2(1) not null,
+				  AGREGAR       VARCHAR2(1) not null,
+				  EDITAR        VARCHAR2(1) not null,
+				  ELIMINAR      VARCHAR2(1) not null
+
+-- Create table
+create table MS_ROL_ACCESO
+(
+  ID_ROL_ACCESO INTEGER not null,
+  ID_ROL        INTEGER not null,
+  ID_ACCESO     INTEGER not null,
+  VER           VARCHAR2(1) not null,
+  AGREGAR       VARCHAR2(1) not null,
+  EDITAR        VARCHAR2(1) not null,
+  ELIMINAR      VARCHAR2(1) not null
+)
+tablespace MS_STD
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the columns 
+comment on column MS_ROL_ACCESO.VER
+  is 'S = Si, N = No.';
+comment on column MS_ROL_ACCESO.AGREGAR
+  is 'S = Si, N = No.';
+comment on column MS_ROL_ACCESO.EDITAR
+  is 'S = Si, N = No.';
+comment on column MS_ROL_ACCESO.ELIMINAR
+  is 'S = Si, N = No.';
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table MS_ROL_ACCESO
+  add constraint PK_MS_ROL_ACCESO_ID primary key (ID_ROL_ACCESO)
+  using index 
+  tablespace MS_STD
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+  
+  
+  
+  -- Create table
+create table MS_ROL
+(
+  ID_ROL INTEGER not null,
+  NOMBRE VARCHAR2(50) not null,
+  ACTIVO VARCHAR2(1) not null
+)
+tablespace MS_STD
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the columns 
+comment on column MS_ROL.ACTIVO
+  is 'A = ACTIVO, I = INACTIVO  ';
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table MS_ROL
+  add constraint PK_MS_ROL primary key (ID_ROL)
+  using index 
+  tablespace MS_STD
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate indexes 
+create unique index IX_MS_ROL_NOMBRE on MS_ROL (NOMBRE)
+  tablespace MS_STD
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+  
+  
+  -- Create table
+create table MS_ACCESO
+(
+  ID_ACCESO         INTEGER not null,
+  NOMBRE            VARCHAR2(200) not null,
+  MODULO            VARCHAR2(25) not null,
+  NOMBRE_MENU_ITEM  VARCHAR2(100),
+  NOMBRE_MENU_MAIN  VARCHAR2(100),
+  NOMBRE_FORMULARIO VARCHAR2(100)
+)
+tablespace MS_STD
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table MS_ACCESO
+  add constraint PK_MS_ACCESO primary key (ID_ACCESO)
+  using index 
+  tablespace MS_STD
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );

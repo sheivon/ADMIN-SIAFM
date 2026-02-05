@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "RevivirSFP";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="card">
+    <div class="card-header bg-success row py-1">
+        <h5 class="text-white col-3">Revivir Solicitud Presupuestaria</h5>
+        <div class="col d-inline-flex justify-content-end "> 
+            <label class=" col-form-label-sm text-light" for="year" >Del base</label>
+            <select class="form-select-sm mx-2"  id="year">
+                <option value="2022">2022</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>     
+           <input id="txtsp" class="form-control form-control-sm" placeholder="Solicitud Presupuesto"/>
+            <a class="btn btn-sm"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-sm table-responsive-sm table-hover" id="tblcpres">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Año</th>
+                    <th>Colicitado por</th>
+                    <th>Concepto</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+
+        let tblcpres = $("#tblcpres").dataTable({});
+
+        $("#year").on("change", function () {
+            Loadtable();
+        });
+
+        function Loadtable() {
+            var yr = $("#year").val();
+            // Clear and destroy the previous table instance
+            if ($.fn.dataTable.isDataTable("#tblcpres")) {
+                $('#tblcpres').DataTable().destroy();
+            }
+
+            tblcpres = $("#tblcpres").dataTable({
+                "ajax": {
+                    "url": "@Url.Action("Soli_Pres", "Home")",
+                    "type": "GET",
+                    "datatype": "json",
+                    "data": { "yr": yr }
+                },
+                "columns": [
+                    { "data": "id" },
+                    { "data": "year" },
+                    { "data": "solicitado" },
+                    { "data": "concepto" },
+                    { "data": "fecha", "render": function(data) { return parseDate(data); } }, 
+                  /*  { "data": "IdRol" },*/   
+                    { "data": "Activo" },
+                    {
+                        data: null,
+                        className: "center",
+                        defaultContent: `
+                                      <div class="d-flex justify-content-center gap-2 py-0">
+                                        <a href="#" class="btn btn-sm btn-primary editor_edit  py-0">
+                                          <i class="fas fa-fw fa-pen"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-sm btn-danger editor_remove  py-0">
+                                          <i class="fas fa-fw fa-trash"></i>
+                                        </a>
+                                      </div>`,
+                        searchable: false,
+                        ordering: false,
+                        width: "100px"
+                    }
+                ]
+            });
+        }
+    </script>
+        
+    }

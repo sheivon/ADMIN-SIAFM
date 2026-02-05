@@ -1,0 +1,152 @@
+﻿
+@{
+    ViewBag.Title = "Caja";
+    Layout = "~/Views/Shared/_caja.cshtml";
+}
+
+<div class="card">
+    <div class="card-header d-inline-flex gap-1">
+        <h5 class="card-title">Caja</h5>
+        <!-- Dropdown Menu Procesos-->
+        <div class="container d-inline-flex px-2 mx-2">
+            <div class="dropdown px-2 mx-2">
+                <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-lock"></i>&nbsp;Procesos</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="btn btn-sm btn-outline-success" onclick="DxAperturaCJ();"><i class="fa fa-unlock"></i>&nbsp;Aperturar&nbsp;Caja</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Anular&nbsp;Recibo</a></li>
+                    <li><a class="dropdown-item" href="#">Reimprimir&nbsp;Recibo</a></li>
+                    <li><a class="dropdown-item" href="#">Reimprimir&nbsp;Recibo</a></li>
+                </ul>
+            </div>
+            <!-- Dropdown Menu Consultas-->
+            <div class="dropdown px-2 mx-2">
+                <button class="btn  btn-outline-success  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Consultas</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item btn btn-outline-success" href="#">Consulta&nbsp;Caja</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <!-- Dropdown Menu Reportes-->
+            <div class="dropdown px-2 mx-2">
+                <button class="btn  btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Reportes</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item btn btn-outline-success" href="#">Consulta&nbsp;Caja</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <!-- Dropdown Menu Cierre-->
+            <div class="dropdown px-2 mx-2">
+                <button class="btn  btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Cierre</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item btn btn-outline-success" href="#">Consulta&nbsp;Caja</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--<div class="d-inline-flex gap-2">-->
+        @*<a class="btn btn-sm btn-outline-success" onclick="DxAperturaCJ();"><i class="fa fa-unlock"></i>&nbsp;Aperturar&nbsp;Caja</a>*@
+        <!--<a class="btn btn-sm btn-outline-success px-1"><i class="fa fa-receipt"></i>&nbsp;Recibos&nbsp;de&nbsp;Caja</a>
+            <a class="btn btn-sm btn-outline-success"><i class="fa fa-receipt"></i>&nbsp;&nbsp;Caja</a>
+            <a class="btn btn-sm btn-outline-success"><i class="fa fa-search-plus"></i>&nbsp;Iniciar&nbsp;Caja</a>
+        </div>-->
+    </div>
+    <div class="card-body">
+        <section id="inrecibo" style="display:block;">
+            <div class="card m-2 p-2">
+                <div class="row gap-4 mb-3">
+                    <div class="col">
+                        <label>Fecha:</label>
+                        <input type="date" class="dt-type-date" />
+                    </div>
+                    <div class="col ">
+                        <label for="txttcambio">Tipo&nbsp;Cambio:</label>
+                        <label id="txttcambio">C$ 00.00</label>
+                    </div>
+                    <div class="col">
+                        <label>Recibo:</label>
+                        <label id="txtconsecutivo">X00000</label>
+                    </div>
+                </div>
+                <!-- top contribuyente to add-->
+                <div class="row mt-2">
+                    <div class="form-floating">
+                        <input class="form-control" placeholder="Contribuyente" id="txtcontr" />
+                        <label for="txtcontr">&nbsp;Contribuyente</label>
+                    </div>
+                </div>
+                <!--Namr from whom is getting the money or contribuyente-->
+                <div class="d-flex my-2 col-12">
+                    <div class="col-6 row px-2 mx-2">
+                        <label for="txtcontr mx-0 px-0">&nbsp;Recibimos&nbsp;de:</label>
+                        <input class="form-control " placeholder="Recibimos de" id="txtcontr" />
+                    </div>
+                    <div class="col-2">
+                        <input class="form-control" placeholder="Contribuyente" id="txtcontr" />
+                        <label for="txtcontr">&nbsp;Total&nbsp;a&nbsp;Pagar:</label>
+                    </div>
+                    <div class="col-2 card px-4 mx-5 ">
+                        <div class="card-header-pills px-0 mx-0"><h4>Estado&nbsp;de&nbsp;cuenta</h4></div>
+                        <div class="card-body rounded-2 border-2 btn-outline-success">
+                            <a class="btn btn-lg btn-outline-success"><i class="fa fa-cash-register"></i></a>
+                            <a class="btn btn-lg btn-outline-success"><i class="fa fa-cash-register"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="card-footer"></div>
+</div>
+
+
+<!-- Modal for Payment Details -->
+<div class="modal fade" id="aperturarcaja" tabindex="-1" role="dialog" aria-labelledby="lbmodal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="lbmodal">Apertura&nbsp;de&nbsp;Caja</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group mb-2">
+                            <label for="pcj">Punto de Caja</label>
+                            <select id="pcj" class="form-control form-control-sm form-select-sm">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group mb-2">
+                            <label for="txtcaja">Cajero(a)</label>
+                            <select id="txtcaja" class="form-control">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-2">
+                    <label for="phone">Fecha</label>
+                    <input id="phone" class="form-control dt-type-date" type="date" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="confirmPaymentBtn">Aperturar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        function DxAperturaCJ() {
+            //$("#aperturarcaja").show("modal"); //incorect call
+            $("#aperturarcaja").modal("show");
+        }
+        function ShowInRec() {
+            $("#inrecibo").att("display:block;")
+        }
+    </script>
+
+}

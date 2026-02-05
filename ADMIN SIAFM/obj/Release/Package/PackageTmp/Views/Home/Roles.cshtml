@@ -1,0 +1,163 @@
+﻿@{
+    ViewBag.Title = "Roles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+} 
+<div class="card">
+    <div class="card-header d-flex bg-primary py-1">
+        <h5 class="font-weight-bold text-white col-4 gap-4">Roles</h5>
+        <div class="col-6 gap-4">
+            <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#artmdl" onclick="DXfrm(null)"><i class="fas fa-fw fa-plus"></i>Nuevo</button>
+            <button class="btn btn-sm btn-outline-light" onclick="printa();"><i class="fas fa-print "> </i>Imprimir</button>
+            <button class="btn btn-sm btn-outline-light" onclick="printexcel();"><i class="fas fa-fw fa-file-excel"></i><span>Excel</span></button>
+        </div>
+
+        <div class="col-2 ">
+            <label for="year" class="text-white">Base del año:</label>
+            <select class="form-select-sm border-0" id="year">
+                <option value="2022">2022/2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-sm table-responsive table-responsive-sm table-hover" id="tblroles">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th> 
+                    <th width="5%">Opciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th width="5%">Opciones</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="frmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="dxRoles">Roles</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex">
+                <input hidden id="txtid" value="0" />
+                <!-- Content loaded via AJAX will be placed here -->
+                <div class="form-floating col-6">
+                    <input id="txtnombre" type="text" class="form-control " placeholder="Nombre del Rol" required />
+                    <label class="form-label" for="txtnombre">Nombre del Rol</label>
+                </div>
+                <div class="form-floating col-6">
+                    <select class="form-control" id="txtact">
+                        <option value="A">Activo</option>
+                        <option value="I">Inactivo</option>
+                    </select>
+                    <label class="form-label" for="txtact">Nombre del Rol</label>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="Save()">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+
+        let tblrol = $("#tblroles").dataTable({});
+
+        function DXfrm(json) {
+            $("#frmModal").modal("show");
+        }
+
+
+        function Save() {
+            var rol = {
+                ID_ROL: $("#txtid").val(),
+                Nombre: $("#txtnombre").val(),
+                Activo: $("#txtact").val()
+            };
+            jQuery.ajax({
+                url: "@Url.Action("SaveRole", "Home")",
+                type: "POST",
+                data: rol,//  JSON.stringify({ a: rol }), //
+                datatype: "Json",
+                ContentType: "applicacion/json; Chartset=utf-8 ",
+                success: function (data) {
+                    if (rol.id == 0) {
+                        if (data.data != 0) {
+                            //table.row.add(articulo).draw(false);
+                            swal({
+                                title: "Guardado!",
+                                text: "Guardado Articulo : " + rol.Nombre + "  con exito!",
+                                icon: "success",
+                                button: "♥",
+                            });
+                        }
+                    }
+                    else {
+                        //table.row(tmprow).data(articulo).draw(false);
+                        swal({
+                            title: "Guardado!",
+                            text: "Guardado Articulo : " + rol.Nombre + "  con exito!",
+                            icon: "success",
+                            button: "♥",
+                        });
+                    }
+                }
+            });
+        }
+  
+    $("#year").on("change", function () {
+        var yr = $("#year").val();
+
+        // Destroy the existing DataTable to remove old data
+        if ($.fn.DataTable.isDataTable('#tblroles')) {
+            $('#tblroles').DataTable().clear().destroy();
+        } 
+        // Reinitialize the DataTable with the new AJAX request
+       tblrol = $('#tblroles').dataTable({
+            "ajax": {
+                "url": "@Url.Action("GetRoles", "Home")",  
+                "type": "GET",
+                "datatype": "json",
+                "data": { "year": yr }  // If you want to send the selected year to the server, include it here
+            },
+            "columns": [
+                { "data": "ID_ROL" },
+                { "data": "Nombre" },
+                { "data": "Activo" },
+                {
+                    data: null,
+                    className: "center",
+                    defaultContent: `
+                        <div class="d-flex justify-content-center gap-2 py-0">
+                            <a href="#" class="btn btn-sm btn-primary editor_edit py-0">
+                                <i class="fas fa-fw fa-pen"></i>
+                            </a>
+                            <a href="#" class="btn btn-sm btn-danger editor_remove py-0">
+                                <i class="fas fa-fw fa-trash"></i>
+                            </a>
+                        </div>`,
+                    searchable: false,
+                    ordering: false,
+                    width: "100px"
+                }
+            ]
+        });
+    });
+
+    </script>
+    
+    
+    }

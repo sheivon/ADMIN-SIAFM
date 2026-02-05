@@ -1,0 +1,352 @@
+﻿
+@{
+    ViewBag.Title = "Eliminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .custom-table th, .custom-table td {
+            padding: 2px 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .custom-table th {
+            background-color: #f4f4f4;
+        }
+
+        .custom-table input {
+            width: 100%;
+            padding: 4px 1px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+</style>
+
+<div class="card">
+    <div class="card-header d-flex justify-content-between gap-4">
+        <h5 class="col-2 mr-auto">@ViewBag.Title</h5>
+        <div class="col-3">
+            <label>CK:</label>
+            <input class="" id="txtck" type="number" placeholder="CK" />
+            <button id="btnSearch" type="button" class="btn btn-sm "><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class=" mb-3">
+            <h6>arckmm</h6>  
+            <table id="tblmm" class="custom-table table-sm table-responsive table-responsive-sm" cellpadding="0" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th># Cuenta</th>
+                        <th>Tipo Documento</th>
+                        <th>Beneficiario</th>
+                        <th>Monto</th>
+                        <th>Año</th>
+                        <th>Mes</th>
+                        <th># Presupuestaria</th>
+                        <th>Retencion IM</th>
+                        <th>Retencion IR</th>
+                        <th>SubTotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table> 
+        </div>
+        <hr />
+        <div class="">
+            <h6>arckcl</h6>  
+            <table id="tblcl" class="custom-table table-sm table-responsive table-responsive-sm" cellpadding="0" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th># Cuenta</th>
+                        <th>CC</th>
+                        <th>CHEQUE</th>
+                        <th>Monto</th>
+                        <th>Tipo Cambio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table> 
+        </div>
+        <hr />
+        <div class="">
+            <h6>arckdigv</h6>  
+            <table id="tbldigv" class="custom-table table-sm table-responsive table-responsive-sm" cellpadding="0" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th># Cuenta</th>
+                        <th># Secuencia</th>
+                        <th>Acreedor</th>
+                        <th>Monto</th>
+                        <th>RUC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table> 
+        </div>
+        <hr />
+        <div class="">
+            <h6>arckce</h6>  
+            <table id="tblce" class="custom-table table-sm table-responsive table-responsive-sm" cellpadding="0" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th># Cuenta</th> 
+                        <th>CHEQUE</th>
+                        <th>Beneficiario</th>
+                        <th>Monto</th>
+                        <th>Fecha</th>
+                        <th>Retencion IM</th>
+                        <th>Solicitud Presupuestaria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table> 
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts{
+    <script>
+
+        $(document).ready(function () {
+
+            let tblmm = null;
+            let tblcl = null;
+            let tbldigv = null;
+            let tblce = null;
+
+            let tmpck = 0;
+             
+
+            function INITS() {
+                initEmptyTable('#tblmm', 10);
+                initEmptyTable('#tblcl', 5);
+                initEmptyTable('#tbldigv', 5);
+                initEmptyTable('#tblce', 7);
+            }
+
+            // Helper to init empty tables with correct column count
+            function initEmptyTable(selector, columnCount) {
+                if ($.fn.DataTable.isDataTable(selector)) {
+                    $(selector).DataTable().clear().destroy();
+                }
+
+                const columns = Array.from({ length: columnCount }, () => ({ defaultContent: '' }));
+
+                $(selector).DataTable({
+                    data: [],
+                    columns: columns,
+                    searching: false,
+                    paging: false,
+                    info: false
+                });
+            }
+            INITS(); // load all empty tables
+             
+            function initTblMM(ck) {
+                if ($.fn.DataTable.isDataTable('#tblmm')) {
+                    $('#tblmm').DataTable().clear().destroy();
+                }
+
+                tblmm = $('#tblmm').DataTable({
+                    searching: false,
+                    ajax: {
+                        url: "/Home/GetArckmm", 
+                        data: { ck: ck }, 
+                        dataSrc: 'data',
+                        //success: function (d) {
+                        //    console.log(d);
+                        //},
+                        error: () => swal({ icon: 'error', title: 'Error loading arckmm' })
+                    },
+                    columns: [
+                        { data: 'NO_CTA',  },
+                        { data: 'TIPO_DOC',   },
+                        { data: 'BENEFICIARIO',   },
+                        { data: 'MONTO',   },
+                        { data: 'ANO',   },
+                        { data: 'MES',   },
+                        { data: 'FECHA', render: function (data) { return DateOnlyformat(data); } },
+                        { data: 'RETENCION_IM',   },
+                        { data: 'RETENCION_IR',   },
+                        { data: 'SUBTOTAL', }, {
+                            data: null, // Use entire row object
+                            title: 'Actions',
+                            orderable: false,
+                            className: "text-nowrap",
+                            render: function (row) {
+                                let buttons = ` <div class="d-flex justify-content-center"> 
+                            <button class="btn btn-sm btn-danger" onclick="deleteAcademicY(${row.AcademicYear_id})">
+                                <i class="fas fa-trash-alt"></i>
+                            </button> </div>`;
+                                return buttons;
+                            }
+                        }
+                    ]
+                });
+            }
+
+            function initTblCL() {
+                if ($.fn.DataTable.isDataTable('#tblcl')) {
+                    $('#tblcl').DataTable().clear().destroy();
+                }
+
+                tblcl = $('#tblcl').DataTable({
+                    searching: false,
+                    ajax: {
+                        url: "/Home/GetArckcl",
+                        data: function (d) {
+                            d.ck = tmpck;
+                        },
+                        dataSrc: 'data',
+                        error: () => swal({ icon: 'error', title: 'Error loading arckcl' })
+                    },
+                    columns: [
+                        { data: 'NO_CTA',   },
+                        { data: 'CC',   },
+                        { data: 'CHEQUE',   },
+                        { data: 'MONTO',   },
+                        { data: 'TIPO_CAMBIO', }, {
+                            data: null, // Use entire row object
+                            title: 'Actions',
+                            orderable: false,
+                            className: "text-nowrap",
+                            render: function (row) {
+                                let buttons = ` <div class="d-flex justify-content-center"> 
+                            <button class="btn btn-sm btn-danger" onclick="deleteAcademicY(${row.CHEQUE})">
+                                <i class="fas fa-trash-alt"></i>
+                            </button> </div>`;
+                                return buttons;
+                            }
+                        }
+                    ]
+                });
+            }
+
+            function initTblDIGV() {
+                if ($.fn.DataTable.isDataTable('#tbldigv')) {
+                    $('#tbldigv').DataTable().clear().destroy();
+                }
+
+                tbldigv = $('#tbldigv').DataTable({
+                    searching: false,
+                    ajax: {
+                        url: "/Home/GetArckdigv",
+                        data: function (d) {
+                            d.ck = tmpck;
+                        },
+                        dataSrc: 'data',
+                        error: () => swal({ icon: 'error', title: 'Error loading arckdigv' })
+                    },
+                    columns: [
+                        { data: 'NO_CTA',   },
+                        { data: 'NO_SECUENCIA',   },
+                        { data: 'ACREEDOR',   },
+                        { data: 'MONTO',   },
+                        { data: 'NO_RUC', }, {
+                            data: null, // Use entire row object
+                            title: 'Actions',
+                            orderable: false,
+                            className: "text-nowrap",
+                            render: function (row) {
+                                let buttons = ` <div class="d-flex justify-content-center">
+                            <button class="btn btn-sm btn-danger" onclick="deleteAcademicY(${row.AcademicYear_id})">
+                                <i class="fas fa-trash-alt"></i>
+                            </button> </div>`;
+                                return buttons;
+                            }
+                        }
+                    ]
+                });
+            }
+
+            function initTblCE() {
+                if ($.fn.DataTable.isDataTable('#tblce')) {
+                    $('#tblce').DataTable().clear().destroy();
+                }
+
+                tblce = $('#tblce').DataTable({
+                    searching: false,
+                    ajax: {
+                        url: "/Home/GetARCKCE",
+                        data: function (d) {
+                            d.ck = tmpck;
+                        },
+                        dataSrc: 'data',
+                        //success: function (d) {
+                        //    console.log(d);
+                        //},
+                        error: () => swal({ icon: 'error', title: 'Error loading arckce' })
+                    },
+                    columns: [
+                        { data: 'NO_CTA'}, 
+                        { data: 'CHEQUE',   },
+                        { data: 'BENEFICIARIO',   },
+                        { data: 'MONTO',   },
+                        { data: 'FECHA', render: function (data) { return DateOnlyformat(data); }   },
+                        {
+                            data: 'RETENCION_IM' },
+                        { data: 'EPPTO_ID', }, {
+                            data: null, // Use entire row object
+                            title: 'Actions',
+                            orderable: false,
+                            className: "text-nowrap",
+                            render: function (row) {
+                                let buttons = ` <div class="d-flex gap-1 justify-content-start">
+                             
+                            <button class="btn btn-sm btn-danger" onclick="deleteAcademicY(${row.AcademicYear_id})">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>`; 
+                                buttons += `</div>`;
+                                return buttons;
+                            }
+                        }
+                    ]
+                });
+            }
+
+  
+            // Search button click handler
+            $('#btnSearch').on('click', function () {
+                tmpck = $('#txtck').val().trim();
+                if (!tmpck) {
+                    swal({ icon: 'warning', title: 'Please enter a CK value.' });
+                    return;
+                }
+
+                // Pass `tmpck` as a parameter
+                initTblMM(tmpck);
+                initTblCL(tmpck);
+                initTblDIGV(tmpck);
+                initTblCE(tmpck);
+            });
+
+
+
+
+            // Function to format date (only date, no time)
+            function DateOnlyformat(data) {
+                if (!data) return '';
+                const match = /\/Date\((\d+)\)\//.exec(data);
+                if (match) {
+                    const date = new Date(parseInt(match[1]));
+                    return date.toLocaleDateString(); // Only returns date part
+                }
+                return 'Invalid Date';
+            }
+        });
+    </script>
+}
